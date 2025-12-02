@@ -2,15 +2,11 @@
 
 ## 1. Penentuan Struktur Query
 
-Dalam mengerjakan setiap soal, saya menentukan struktur query berdasarkan kompleksitas masalah dan tujuan akhirnya.  
-Saya menggunakan **CTE** jika solusi perlu dibagi menjadi beberapa tahap logis agar lebih mudah dibaca (readebility) dan diuji.  
-Untuk kasus sederhana, saya menggunakan **subquery** langsung agar lebih ringkas. Sedangkan **window function** saya gunakan saat perlu menghitung nilai agregat tanpa menghilangkan detail baris (misalnya mencari nilai minimum per kelompok namun tetap menampilkan semua data).  
-
-Pendekatan ini membantu saya menghasilkan query yang lebih terstruktur, lebih mudah di-debug, dan efisien karena setiap bagian query memiliki peran yang jelas.
+Dalam membangun solusi SQL, saya menentukan struktur query berdasarkan kompleksitas syntax dan readebility. Saya menggunakan CTE ketika query terbagi dalam beberapa tahap (misalnya agregas) agar alur logika mudah diuji. Subquery digunakan jika tujuan hanya satu tingkat transformasi sederhana. Window function dipilih saat saya membutuhkan perhitungan agregat tanpa menghilangkan baris detail (misalnya mencari nilai minimum per kelompok tetapi tetap mempertahankan seluruh data). Dengan mempertimbangkan hal ini, query menjadi lebih terstruktur, mudah dipelihara, dan dapat dioptimalkan sesuai kebutuhan.
 
 ---
 
-## 2. Teknik SQL yang Paling Berdampak
+## 2. Powerfull SQL Techniques
 
 Teknik yang paling berdampak bagi saya adalah **window function** dan **range join**.  
 Window function memungkinkan saya membandingkan data antar-baris dalam satu kelompok tanpa harus membuat subquery yang kompleks.  
